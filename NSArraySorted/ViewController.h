@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@interface Person : NSObject
+
+@end
+
 @interface ViewController : UIViewController
 
 

@@ -8,6 +8,13 @@
 
 #import "ViewController.h"
 
+@interface Person()
+@property (nonatomic ,strong) NSString *name;
+@end
+@implementation Person
+
+@end
+
 @interface ViewController ()
 
 @end
@@ -17,11 +24,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSArray *names = @[ @"Phuong", @"ABC", @"Teo", @"Minh" ,@"Dong"];
+    NSMutableArray *people = [NSMutableArray array];
+    NSSortDescriptor *sortDescription = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    [names enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        Person *person = [[Person alloc]init];
+        person.name = [names objectAtIndex:idx];
+        [people addObject:person];
+    }];
+    
+    NSArray *peopleSort = [people sortedArrayUsingDescriptors:@[sortDescription]];
+    for (Person *obj in peopleSort) {
+        NSLog(@"ten: %@",obj.name);
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
