@@ -14,6 +14,7 @@
 		6F550AD51B9B25E200BCEC63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F550AD41B9B25E200BCEC63 /* Images.xcassets */; };
 		6F550AD81B9B25E200BCEC63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F550AD61B9B25E200BCEC63 /* LaunchScreen.xib */; };
 		6F550AE41B9B25E300BCEC63 /* NSArraySortedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F550AE31B9B25E300BCEC63 /* NSArraySortedTests.m */; };
+		6F550AEF1B9B370300BCEC63 /* SearchDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F550AEE1B9B370300BCEC63 /* SearchDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		6F550ADD1B9B25E300BCEC63 /* NSArraySortedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSArraySortedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F550AE21B9B25E300BCEC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F550AE31B9B25E300BCEC63 /* NSArraySortedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArraySortedTests.m; sourceTree = "<group>"; };
+		6F550AED1B9B370300BCEC63 /* SearchDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDictionary.h; sourceTree = "<group>"; };
+		6F550AEE1B9B370300BCEC63 /* SearchDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				6F550AD41B9B25E200BCEC63 /* Images.xcassets */,
 				6F550AD61B9B25E200BCEC63 /* LaunchScreen.xib */,
 				6F550AC71B9B25E200BCEC63 /* Supporting Files */,
+				6F550AED1B9B370300BCEC63 /* SearchDictionary.h */,
+				6F550AEE1B9B370300BCEC63 /* SearchDictionary.m */,
 			);
 			path = NSArraySorted;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F550AD01B9B25E200BCEC63 /* ViewController.m in Sources */,
+				6F550AEF1B9B370300BCEC63 /* SearchDictionary.m in Sources */,
 				6F550ACD1B9B25E200BCEC63 /* AppDelegate.m in Sources */,
 				6F550ACA1B9B25E200BCEC63 /* main.m in Sources */,
 			);

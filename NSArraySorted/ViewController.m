@@ -24,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(IBAction)tapButtonArraySort:(id)sender{
     NSArray *names = @[ @"Phuong", @"ABC", @"Teo", @"Minh" ,@"Dong"];
     NSMutableArray *people = [NSMutableArray array];
     NSSortDescriptor *sortDescription = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
@@ -37,6 +40,7 @@
     for (Person *obj in peopleSort) {
         NSLog(@"ten: %@",obj.name);
     }
+
 }
 
 
